@@ -1,4 +1,6 @@
 jupyter
 requests
+beautifulsoup4
 # you may need "xcode-select --install" for Mac OS
 scrapy
+pytesseract
