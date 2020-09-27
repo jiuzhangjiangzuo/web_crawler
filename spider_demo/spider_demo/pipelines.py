@@ -12,7 +12,7 @@ import csv
 class LianjiaCollectDataPipeline:
     def open_spider(self, spider):
         self.csv_file = open('data/result.csv', 'w')
-        self.csv_writer = csv.DictWriter(self.csv_file, fieldnames = LIANJIA_HOUSE_FIELDS)
+        self.csv_writer = csv.DictWriter(self.csv_file, fieldnames = spider.item_fields)
         self.csv_writer.writeheader()
 
     def close_spider(self, spider):

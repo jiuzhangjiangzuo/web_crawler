@@ -1,7 +1,7 @@
 import scrapy
 import os
 from lxml import etree
-from spider_demo.items import LianjiaHouseItem
+from spider_demo.items import LianjiaHouseItem, LIANJIA_HOUSE_FIELDS
 
 class LianjiaBasicSpider(scrapy.Spider):
     # 爬虫的名字
@@ -9,9 +9,11 @@ class LianjiaBasicSpider(scrapy.Spider):
     # 允许的域名
     allowed_domains = ['hz.lianjia.com']
     # 起始的url
-    start_urls = ['http://hz.lianjia.com/zufang/']
+    start_urls = ['https://hz.lianjia.com/zufang/']
 
     DOWNLOAD_PATH = 'download_lianjia'
+
+    item_fields = LIANJIA_HOUSE_FIELDS
 
     # def start_requests(self):
     #     for i in range(10):
