@@ -11,7 +11,7 @@ class LianjiaBasicSpider(scrapy.Spider):
     # 起始的url
     start_urls = ['https://hz.lianjia.com/zufang/']
 
-    DOWNLOAD_PATH = 'download_lianjia'
+    DOWNLOAD_PATH = 'download'
 
     item_fields = LIANJIA_HOUSE_FIELDS
 
