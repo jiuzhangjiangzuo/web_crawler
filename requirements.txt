@@ -1,0 +1,4 @@
+jupyter
+requests
+# you may need "xcode-select --install" for Mac OS
+scrapy
